@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 234, 173, 0.836);
+}
+.title{
+    font-family: cursive;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.labelContainer{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.labelOrigin{
+    font-family: cursive;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.labelOrigin input[type="radio"]{
+    display: none;
+}
+.labelOrigin span{
+    position: relative;
+    display: inline-block;
+    background-color: #837b4b;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.527);
+    user-select: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.labelOrigin input[type="radio"]:checked ~ span{
+    background-color: #fff6c5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+}
+.selectDiet select{
+    background-color: #e9e0ab;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.buttonContainer{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.buttonContainer button{
+    background-color: hsl(115, 16%, 46%);
+    border: 0px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    min-width: 100px;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.527);
+    transition: all .25s;
+}
+.buttonContainer button:hover{
+    background-color: hsl(115, 90%, 81%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.527);
+    cursor: pointer;
+}

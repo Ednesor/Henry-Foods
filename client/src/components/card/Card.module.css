@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    filter: grayscale(80%);
+    filter: grayscale(50%);
     transition: all .1s;
 }
 .container:hover{

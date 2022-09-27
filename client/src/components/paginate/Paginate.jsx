@@ -11,16 +11,18 @@ export default function Paginate() {
     const buttons = () => {
         let buttonsArray = [];
         for (let i = 0; i < Math.ceil(recipes.recipes.length / 9); i++) {
-            buttonsArray.push(<button key={i} onClick={() => setPage(i)}>{i + 1}</button>)
+            buttonsArray.push(<button className={i === page ? style.actualButton : style.buttonPag} key={i} onClick={() => setPage(i)}>{i + 1}</button>)
         }
         return buttonsArray;
     }
 
     return (
-        <div className={style.container}>
-            {buttons()}
-            <Filters />
-            <Cards page={page} />
+        <div className={style.background}>
+            <div className={style.container}>
+                <Filters />
+                <div className={style.buttonsContainer}>{buttons()}</div>
+                <Cards page={page} />
+            </div>
         </div>
     );
 }
