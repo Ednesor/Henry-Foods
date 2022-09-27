@@ -1,0 +1,55 @@
+.container{
+    margin: 15px;
+    background-color: #FFF6BF;
+    width: 25%;
+    min-width: 350px;
+    border: 5px solid #947e3c;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    filter: grayscale(80%);
+    transition: all .1s;
+}
+.container:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.title{
+    width: 90%;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 500;
+}
+.image{
+    border-radius: 10px;
+    border: 3px solid #947e3c;
+    max-width: 90%;
+}
+.diets{
+    font-family: cursive;
+    width: 70%;
+    background-color: #fcf1d2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #947e3c;
+    text-align: center;
+}
+.buttonDetails{
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: #fcf1d2;
+    padding: 10px;
+    border: 3px solid #947e3c;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-family: cursive;
+    font-weight: 600;
+    transition: all .5s;
+}
+.buttonDetails:hover{
+    background-color: #947e3c;
+    border-color: #ffe18d;
+}
